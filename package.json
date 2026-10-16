@@ -1,0 +1,26 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node src/index.js --once",
+    "test:notify": "node src/test-notify.js",
+    "monitor": "node Playwright/price-monitor/src/index.js",
+"monitor:once": "node Playwright/price-monitor/src/index.js --once",
+"monitor:test": "node Playwright/price-monitor/src/test-notify.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "node-cron": "^4.6.0"
+  }
+}
